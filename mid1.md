@@ -170,4 +170,6 @@ int main(void) {
     return 0;
 }
 ```
+<img width="802" height="632" alt="image" src="https://github.com/user-attachments/assets/9475225b-2ec5-4d05-92d4-d6694458bb7b" />
+
 <img width="1115" height="628" alt="image" src="https://github.com/user-attachments/assets/8886625e-e3b8-4422-832e-2bb15f6aec07" />
