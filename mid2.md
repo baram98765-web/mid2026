@@ -1,4 +1,4 @@
-
+# 2번 답안
 
 ```
 #include <stdio.h>
