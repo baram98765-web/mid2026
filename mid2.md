@@ -65,3 +65,6 @@ int main(void) {
     return 0;
 }
 ```
+
+<img width="1115" height="628" alt="image" src="https://github.com/user-attachments/assets/1df6e7d3-dfd0-436a-a9a4-c94797948a57" />
+
