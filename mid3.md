@@ -1,12 +1,13 @@
-# 3번 문항
+# 3번 답안
 
 ```
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
 int main(void) {
-    int com[3];     // 컴퓨터의 3자리 숫자 (각각 다른 숫자라고 가정)
+    int com[3];     // 컴퓨터의 3자리 숫자
     int user[3];    // 사용자가 입력한 3자리 숫자
     int strike = 0;
     int ball = 0;
@@ -15,7 +16,7 @@ int main(void) {
     // 1. 난수 생성 초기화 (컴퓨터가 3개의 랜덤 숫자 뽑기)
     srand((unsigned int)time(NULL));
 
-    // 간단하게 1~9 사이의 서로 다른 숫자를 뽑는 로직 (시험용 기초 버전)
+    // 1~9 사이의 서로 다른 숫자를 뽑는 로직
     com[0] = rand() % 9 + 1; // 1 ~ 9
     do {
         com[1] = rand() % 9 + 1;
@@ -24,9 +25,6 @@ int main(void) {
     do {
         com[2] = rand() % 9 + 1;
     } while (com[2] == com[0] || com[2] == com[1]); // 앞의 숫자들과 겹치면 다시 뽑기
-
-    // (테스트용) 컴퓨터가 뭘 뽑았는지 확인하고 싶다면 아래 주석을 해제하세요!
-    // printf("[디버그] 컴퓨터의 숫자: %d %d %d\n", com[0], com[1], com[2]);
 
     printf("=== 숫자 야구 게임을 시작합니다! (1~9 중 3개) ===\n");
 
@@ -61,7 +59,7 @@ int main(void) {
 
         // 5. 정답 체크
         if (strike == 3) {
-            printf("\n🎉 정답입니다! %d번 만에 맞췄습니다!\n", tries);
+            printf("\n정답입니다! %d번 만에 맞췄습니다!\n", tries);
             break;
         }
     }
@@ -69,3 +67,6 @@ int main(void) {
     return 0;
 }
 ```
+
+<img width="1115" height="628" alt="image" src="https://github.com/user-attachments/assets/ce747b93-4794-4525-94ed-a084d292ce1e" />
+
